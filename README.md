@@ -5,8 +5,11 @@ Simple Python script that analyzes your Spotify listening history.
 Python 3.14
 
 ## Usage
-1. Request your Spotify extended listening history from https://www.spotify.com/account/privacy/
-2. Once available, download the zip file and extract it.
+1. Download <a href="main.py" download>main.py</a>.
+2. Request your Spotify extended listening history from https://www.spotify.com/account/privacy/.
+   - Or use the provided <a href="Streaming_History_Audio_6767.json" download>test file</a>.
+3. Once the extended listening history file is available, download and extract it.
+   - Skip this step if you're using the test file.
 4. Put `main.py` in the same folder as the json files.
 5. Enter the year when prompted. (example: 2026)
 6. Enter either 'artist' or 'song' when prompted.
