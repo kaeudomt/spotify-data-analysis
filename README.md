@@ -12,6 +12,7 @@ Python 3.14
    - Skip this step if you're using the test file.
 4. Put `main.py` in the same folder as the json files.
 5. Enter the year when prompted. (example: 2026)
+   - If you are using the test file, type 6767.
 6. Enter either 'artist' or 'song' when prompted.
 
 ## Output reading guide
