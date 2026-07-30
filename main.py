@@ -2,6 +2,8 @@ import json
 from pathlib import Path
 
 year = input("year to analyze: ")
+if year == "test":
+    year = 6767
 FILE_PATH = f"Streaming_History_Audio_{year}.json"
 
 
