@@ -11,9 +11,10 @@ Python 3.14
 3. Once the extended listening history file is available, download and extract it.
    - Skip this step if you're using the test file.
 4. Put `main.py` in the same folder as the json files.
-5. Enter the year when prompted. (example: 2026)
+5. Run `main.py`.
+6. Enter the year when prompted. (example: 2026)
    - If you are using the test file, type `test`.
-6. Enter either 'artist' or 'song' when prompted.
+7. Enter either 'artist' or 'song' when prompted.
 
 ## Output reading guide
 Times streamed | Times more streamed than next entry | Percentage | Name (song/artist)
