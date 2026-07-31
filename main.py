@@ -1,4 +1,5 @@
 import json
+import sys
 from pathlib import Path
 
 year = input("year to analyze: ")
@@ -7,6 +8,7 @@ FILE_PATH = f"Streaming_History_Audio_{year}.json"
 
 if not(Path(FILE_PATH).exists()):
     print("file path invalid")
+    sys.exit()
 
 with open(FILE_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
@@ -14,6 +16,7 @@ with open(FILE_PATH, "r", encoding="utf-8") as f:
 total_entries = len(data)
 
 def analyze(metadata, label):
+    print(f"You have {total_entries} total entries")
     counts = {}
 
     for record in data:
@@ -41,10 +44,10 @@ def analyze(metadata, label):
 
 
 choice = input("song or artist: ")
-print(f"You have {total_entries} total entries")
 if choice == "song":
     analyze("master_metadata_track_name", "songs")
 elif choice == "artist":
     analyze("master_metadata_album_artist_name", "artists")
 else:
-    print("select song or artist")
+    print("select either song or artist")
+    sys.exit()
